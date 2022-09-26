@@ -1,9 +1,10 @@
 import chai from 'chai';
 import chatHttp from 'chai-http';
-import 'chai/register-should';
+// import 'chai/register-should';
 import app from '../index';
 
 chai.use(chatHttp);
+chai.should();
 const { expect } = chai;
 
 describe('Testing the book endpoint: ', () => {
